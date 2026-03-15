@@ -56,4 +56,15 @@ fact = 1
 for i in range(1,num+1):
     fact *= i
 print(fact)
-    
+
+n = 3 
+for i in range(1, 4):
+    for j in range(3, -1):
+        print(""*i, end="")
+    print(" * "*i, end="\n")
+
+n = 3 
+for i in range(3):
+    print(" " * (n-i-1), end=" ")
+    print("*" * (2*i+1), end="")
+    print(" " * (n-i-1))
