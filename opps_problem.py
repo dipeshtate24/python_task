@@ -117,3 +117,20 @@ print(v1)
 print(v2)
 print(v1 + v2)
 print(v1 * v2)
+
+
+import random 
+randoNumber = random.randint(1, 100)
+
+a = 1
+for i in range(0, 5):
+    userGuess = int(input("Enter your number:"))
+    if a < 5:
+        if userGuess == randoNumber:
+            print("Your Guess Correct Number.")
+            break
+        else:
+            print(f"{5-a} chances remain")
+        a += 1
+    else:
+        print("No chance left try again.")
