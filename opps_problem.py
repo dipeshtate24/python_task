@@ -134,3 +134,25 @@ for i in range(0, 5):
         a += 1
     else:
         print("No chance left try again.")
+
+
+import random
+RandomNumber = random.randint(1, 5)
+UserGuess = None
+guesses = 0
+
+while UserGuess != RandomNumber:
+    UserGuess = int(input("Enter Number:"))
+    guesses += 1
+    if UserGuess == RandomNumber:
+        print("You guessed it right.")
+    else:
+        if (UserGuess>RandomNumber):
+            print("You guessed it wrong. Enter number is large.")
+        else:
+            print("You guessed it wrong. Enter number is small.")
+        
+
+print(f"You guessed the number in {guesses} guesses.")
+
+
