@@ -38,12 +38,21 @@ class Programmer(Employee):
         super().takeBreak()
         print("I am employee and take breath.")
 
-p = Person()
-p.takeBreak()
-print(p.country)
-e = Employee()
-print(e.company)
-e.takeBreak()
-pr = Programmer()
-pr.getSalary()
-pr.takeBreak()
+# p = Person()
+# p.takeBreak()
+# print(p.country)
+# e = Employee()
+# print(e.company)
+# e.takeBreak()
+# pr = Programmer()
+# pr.getSalary()
+# pr.takeBreak()
+
+def test_programmer():
+    pr = Programmer()
+    pr.getSalary()
+
+
+if __name__ == "__main__":
+    test_programmer()   
+
