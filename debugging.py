@@ -55,28 +55,28 @@ logging.debug('End of program')
 
 
 
-# logging.critical('Critical error! Critical error!')
-# logging.disable(logging.CRITICAL)
-# logging.critical('Critical error! Critical error!')
-# logging.error('Error! Error!')
+logging.critical('Critical error! Critical error!')
+logging.disable(logging.CRITICAL)
+logging.critical('Critical error! Critical error!')
+logging.error('Error! Error!')
 
-# import random
-# heads = 0
-# for i in range(1, 21):
-#     if random.randint(0, 1) == 1:
-#         heads += 1
-#     if i == 10:
-#         print('Halfway done!')
-# print('Heads come up '+ str(heads)+' times.')
+import random
+heads = 0
+for i in range(1, 21):
+    if random.randint(0, 1) == 1:
+        heads += 1
+    if i == 10:
+        print('Halfway done!')
+print('Heads come up '+ str(heads)+' times.')
 
 
-# spam = 11
+spam = 11
 
-# assert spam < 10
+assert spam < 10
 
-# v1 = "goodday"
-# v2 = "GOODday"
-# assert v1 == v2
+v1 = "goodday"
+v2 = "GOODday"
+assert v1 == v2
 
 import random
 guess = ''
