@@ -26,9 +26,9 @@
 # except Exception as err:
 #     print('An exception happend:' + str(err))
 
-import logging
+# import logging
 
-logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 # ages = [26, 57, 92, 54, 22, 15, 17, 80, 47, 73]
 
 # ages.sort()
@@ -39,16 +39,75 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - 
 # print(ages)
 # assert ages[0] <= ages[-1]
 
-logging.debug('Start of program')
+# logging.debug('Start of program')
 
-def factorial(n):
-    logging.debug('Start of factorial(' + str(n) +')')
-    total = 1
-    for i in range(1, n+1):
-        total *= i
-        logging.debug('i is '+ str(i) +', total is '+ str(total))
-    logging.debug('End of factorial(' + str(n)+')')
-    return total
+# def factorial(n):
+#     logging.debug('Start of factorial(' + str(n) +')')
+#     total = 1
+#     for i in range(1, n+1):
+#         total *= i
+#         logging.debug('i is '+ str(i) +', total is '+ str(total))
+#     logging.debug('End of factorial(' + str(n)+')')
+#     return total
 
-print(factorial(5))
-logging.debug('End of program')
+# print(factorial(5))
+# logging.debug('End of program')
+
+# logging.debug('Some minor code and debugging details.')
+# logging.info('An event happend.')
+# logging.warning('Something could go wrong.')
+# logging.error('An error has occured.')
+# logging.critical('The program is unable to recover!')
+
+# logging.critical('Critical error! Critical error!')
+# logging.disable(logging.CRITICAL)
+# logging.critical('Critical error! Critical error!')
+# logging.error('Error! Error!')
+
+# import random
+# heads = 0
+# for i in range(1, 21):
+#     if random.randint(0, 1) == 1:
+#         heads += 1
+#     if i == 10:
+#         print('Halfway done!')
+# print('Heads come up '+ str(heads)+' times.')
+
+
+# spam = 11
+
+# assert spam < 10
+
+# v1 = "goodday"
+# v2 = "GOODday"
+# assert v1 == v2
+
+import random
+guess = ''
+while guess not in ('heads', 'tails'):
+    print('Guess the coin toss! Enter heads or tails')
+    guess = input('> ')
+
+toss = random.randint(0, 1)
+count = 5
+if toss == 1:
+    computer_guess = 'heads'
+else:
+    computer_guess = 'tails'
+
+for i in range(1, 6):
+    if count > 0:
+        if guess == computer_guess:
+            print('You got it!')
+            break
+        else:
+            print('Nope! Guess again.')
+            guess = input('> ')
+            if guess == computer_guess:
+                print('You got it!')
+            else:
+                count -= 1
+                print('Nope. You are really bad at this game.')
+    print('guess are remaining '+ str(count) + ' .')
+else:
+    print('Your guess is over:')
