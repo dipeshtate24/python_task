@@ -16,8 +16,8 @@ def is_phone_number(text):
             return False
     return True
 
-# print('Is 415-555-4242 a phone number?', is_phone_number('415-555-4242'))
-# print(is_phone_number('415-555-4242'))
+print('Is 415-555-4242 a phone number?', is_phone_number('415-555-4242'))
+print(is_phone_number('415-555-4242'))
 
 message = 'Call me at 415-555-1011 tomorrow. 415-555-9999 is my office.'
 for i in range(len(message)):
@@ -25,3 +25,8 @@ for i in range(len(message)):
     if is_phone_number(segment):
         print('Phone number found: ' + segment)
 print('Done')
+
+
+import re
+pattern = re.compile(r'\d{3}-\d{3}-\d{4}')  # This regex has no groups.
+print(pattern.findall('Cell: 415-555-9999 Work: 212-555-0000'))
