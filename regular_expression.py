@@ -30,3 +30,25 @@ print('Done')
 import re
 pattern = re.compile(r'\d{3}-\d{3}-\d{4}')  # This regex has no groups.
 print(pattern.findall('Cell: 415-555-9999 Work: 212-555-0000'))
+
+
+import re
+pattern = re.compile(r'\d{3}-\d{3}-\d{4}')  # This regex has no groups.
+print(pattern.findall('Cell: 415-555-9999 Work: 212-555-0000'))
+
+pattern = re.compile(r'[aeiou]')
+print(pattern.findall('RoboCop eat baby food'))
+
+pattern = re.compile(r'\d+\s\w+')
+print(pattern.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans,' \
+' 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge'))
+
+at_re = re.compile(r'.at')
+print(at_re.findall('The cat in the hat sat on the flat mat.'))
+
+pattern = re.compile(r'42!?')
+print(pattern.search('42!'))
+
+pattern = re.compile(r'(\d{3}-)?\d{3}-\d{4}')
+match1 =  pattern.search('My number is 415-555-4242')
+print(match1.group())
