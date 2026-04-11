@@ -52,3 +52,19 @@ print(pattern.search('42!'))
 pattern = re.compile(r'(\d{3}-)?\d{3}-\d{4}')
 match1 =  pattern.search('My number is 415-555-4242')
 print(match1.group())
+
+consonant_pattern = re.compile(r'[^aeiouAEIOU]')
+print(consonant_pattern.findall('RoboCop eats BABY FOOD.'))
+
+agent_pattern = re.compile(r'Agent \w+')
+print(agent_pattern.sub('CENSORED', 'Agent Alice contacted Agent Bob'))
+
+
+pattern = re.compile(r'''(
+    (\d{3}|\(\d{3}\))?  # Area code
+    (\s|-|\.)?  # Separator
+    \d{3}  # First three digits
+    (\s|-|\.)  # Separator
+    \d{4}  # Last four digits
+    (\s*(ext|x|ext\.)\s*\d{2,5})?  # Extension
+    )''', re.VERBOSE)
