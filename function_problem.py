@@ -81,3 +81,17 @@ for i in new_list:
     if "apple" == i:
         new_list.remove(i)
     print(new_list) 
+
+
+def CalculateGmean(a, b):
+    mean = (a * b) / (a + b)
+    print(round(mean,2))    
+
+def isGrater(a, b):
+    if a > b:
+        print("First number is grater.")
+    else:
+        print("Second number is grater and equal.")
+
+CalculateGmean(9, 8)
+isGrater(9, 8)
