@@ -16,3 +16,4 @@ def name(**name):
     print("Hello,",name['fname'], name['mname'], name['lname'])
 
 name(mname="hari", fname="sinchan", lname='Nohara' )
+
