@@ -105,3 +105,29 @@ with open(new_filename, 'w') as f:
      f.write(content)
 
 os.remove(oldname)
+
+
+with open('find_word.txt', 'r') as f:
+    print(type(f))
+
+    f.seek(10)
+
+    data = f.read(5)
+    print(data)
+
+with open('find_word.txt', 'r') as f:
+    data = f.read(10)
+
+    current_position = f.tell()
+    print(current_position)
+
+    f.seek(current_position)
+
+
+with open('myfile2.txt', 'w') as f:
+    f.write('Hello World')
+    f.truncate(5)
+
+with open('myfile2.txt', 'r') as f:
+    print(f.read())
+
