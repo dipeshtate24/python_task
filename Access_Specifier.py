@@ -1,15 +1,15 @@
-# class Employee:
-#     def __init__(self, name, age):
-#         self.__name = name
-#         self.age = age
+class Employee:
+    def __init__(self, name, age):
+        self.__name = name
+        self.age = age
 
 
-# # a = Employee()
-# a = Employee('Hemant', 32)
-# # print(a.__name) # cannot be access directly
-# print(a._Employee__name)
-# print(a.age)
-# print(a.__dir__())
+# a = Employee()
+a = Employee('Hemant', 32)
+# print(a.__name) # cannot be access directly
+print(a._Employee__name)
+print(a.age)
+print(a.__dir__())
 
 class Student:
     def __init__(self):
