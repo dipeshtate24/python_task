@@ -68,3 +68,21 @@ pattern = re.compile(r'''(
     \d{4}  # Last four digits
     (\s*(ext|x|ext\.)\s*\d{2,5})?  # Extension
     )''', re.VERBOSE)
+
+
+pattern = "was"
+
+text =''' it was strong typical cyclone in the south.'''
+
+result = re.search(pattern, text)
+print(result)
+
+pattern = r"[A-Z]yclone"
+
+text ='''it was strong typical Cyclone in the south'''
+
+matches = re.finditer(pattern, text)
+
+for match in matches:
+    print(match)
+    
