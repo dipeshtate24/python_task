@@ -72,14 +72,14 @@ pattern = re.compile(r'''(
 
 pattern = "was"
 
-text =''' it was strong typical cyclone in the south.'''
+text ='''It was strong typical cyclone in the south.'''
 
 result = re.search(pattern, text)
 print(result)
 
 pattern = r"[A-Z]yclone"
 
-text ='''it was strong typical Cyclone in the south'''
+text ='''It was a strong typical Cyclone in the south'''
 
 matches = re.finditer(pattern, text)
 
