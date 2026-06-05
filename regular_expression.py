@@ -85,4 +85,16 @@ matches = re.finditer(pattern, text)
 
 for match in matches:
     print(match)
+
+pattern = r"[A-Z]yclone"
+
+text ='''it was strong typical Cyclone in the south'''
+
+matches = re.finditer(pattern, text)
+
+for match in matches:
+    # print(type(match.span()))
+    print(match.span())
+    print(text[match.span()[0]:match.span()[1]])
+    
     
