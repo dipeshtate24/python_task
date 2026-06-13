@@ -1,6 +1,7 @@
 import multiprocessing
 import requests
 import os
+import concurrent.futures
 
 os.makedirs("files", exist_ok=True)
 
@@ -23,3 +24,11 @@ if __name__ == "__main__":
 
     for p in pros:
         p.join()
+
+# using concurrent feature
+ with concurrent.futures.ProcessPoolExecutor() as executor:
+        l1 = [url for i in range(10)]
+        l2 = [i for i in  range(10)]
+        results = executor.map(downloadFile, l1, l2)
+        for r in results:
+            print(r)
