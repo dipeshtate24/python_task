@@ -51,15 +51,34 @@ import re
 # consonant_pattern = re.compile(r'[^aeiouAEIOU]')
 # print(consonant_pattern.findall('RoboCop eats BABY FOOD.'))
 
-agent_pattern = re.compile(r'Agent \w+')
-print(agent_pattern.sub('CENSORED', 'Agent Alice contacted Agent Bob'))
+# agent_pattern = re.compile(r'Agent \w+')
+# print(agent_pattern.sub('CENSORED', 'Agent Alice contacted Agent Bob'))
 
 
-pattern = re.compile(r'''(
-    (\d{3}|\(\d{3}\))?  # Area code
-    (\s|-|\.)?  # Separator
-    \d{3}  # First three digits
-    (\s|-|\.)  # Separator
-    \d{4}  # Last four digits
-    (\s*(ext|x|ext\.)\s*\d{2,5})?  # Extension
-    )''', re.VERBOSE)
+# pattern = re.compile(r'''(
+#     (\d{3}|\(\d{3}\))?  # Area code
+#     (\s|-|\.)?  # Separator
+#     \d{3}  # First three digits
+#     (\s|-|\.)  # Separator
+#     \d{4}  # Last four digits
+#     (\s*(ext|x|ext\.)\s*\d{2,5})?  # Extension
+#     )''', re.VERBOSE)
+
+
+# pattern = "was"
+
+# text =''' it was strong typical cyclone in the south.'''
+
+# result = re.search(pattern, text)
+# print(result)
+
+pattern = r"[A-Z]yclone"
+
+text ='''it was strong typical Cyclone in the south'''
+
+matches = re.finditer(pattern, text)
+
+for match in matches:
+    # print(type(match.span()))
+    print(match.span())
+    print(text[match.span()[0]:match.span()[1]])

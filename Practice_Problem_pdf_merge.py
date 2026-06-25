@@ -5,7 +5,10 @@ merger = PdfWriter()
 
 folder_path = 'pdf_folder'
 
-for pdf in os.listdir(folder_path):
-    merger(pdf)
+for files in os.listdir(folder_path):
+    if files.endswith('.pdf'):
+        
+        for pdf in files :
+            merger(pdf)
 
 merger.write("new_file.pdf")
