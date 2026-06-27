@@ -2,3 +2,5 @@ venv/
 *.txt
 __pycache__/
 Image_folder/
+files/
+*.jpg 
