@@ -12,5 +12,5 @@ e1.name = "subhash"
 e1.show()
 e1.changeCompany("Tesla")
 e1.show()
-# Employee.company = 'Google'
+Employee.company = 'Google'
 print(Employee.company)
