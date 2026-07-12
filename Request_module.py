@@ -1,7 +1,7 @@
 import requests
 
-# respose = requests.get("https://www.google.com")
-# print(respose.text)
+respose = requests.get("https://www.google.com")
+print(respose.text)
 
 
 
