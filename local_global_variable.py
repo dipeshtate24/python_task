@@ -1,15 +1,15 @@
-# x = 4 # global variable
-# print(x)
+x = 4 # global variable
+print(x)
 
-# def hello():
-#     x = 5 # local variable
+def hello():
+    x = 5 # local variable
 
-#     print(f"local value of x is {x}")
-#     print("Hey friend")
+    print(f"local value of x is {x}")
+    print("Hey friend")
 
-# print(f"global value is x is {x}")
-# hello()
-# print(f"global value is x is {x}")
+print(f"global value is x is {x}")
+hello()
+print(f"global value is x is {x}")
 
 
 x = 4 # global variable
