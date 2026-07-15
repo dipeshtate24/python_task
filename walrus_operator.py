@@ -1,25 +1,25 @@
-# a = True
-# print(a:=False)
+a = True
+print(a:=False)
 
-# numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 
-# while (n := len(numbers)) > 0:
-#     print(numbers.pop())
+while (n := len(numbers)) > 0:
+    print(numbers.pop())
 
 
-# happy = True
+happy = True
 
-# print(happy)
+print(happy)
 
-# print(happy := True)
+print(happy := True)
 
-# foods = list()
-# while True:
-#     food = input("What food do you like ?")
-#     if food == "quite":
-#         break
+foods = list()
+while True:
+    food = input("What food do you like ?")
+    if food == "quite":
+        break
 
-# foods.append(food)
+foods.append(food)
 
 foods = list()
 while (food := input("What food do you like ?")) != "quit":
