@@ -62,3 +62,5 @@ dragon_loot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 add_to_inventory(inv, dragon_loot)
 display_inventory(inv)
 
+
+
