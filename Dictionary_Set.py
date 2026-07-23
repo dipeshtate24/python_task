@@ -20,3 +20,4 @@ myDict.update(update_Dict)
 print(myDict)
 
 print(myDict.get('Fruits'))
+
