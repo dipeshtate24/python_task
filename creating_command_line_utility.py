@@ -32,8 +32,8 @@ args = parser.parse_args()
 # Use the arguments in your code
 print(args.url)
 print(args.output, type(args.output))
-# print(args.arg1)
-# print(args.arg2)
+print(args.arg1)
+print(args.arg2)
 download_file(args.url, args.output)
 
 
