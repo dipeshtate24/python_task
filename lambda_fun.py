@@ -1,5 +1,5 @@
-# def double(x):
-#     return x*2
+def double(x):
+    return x*2
 
 double = lambda x : x*2
 cube = lambda x : x*x*x  
