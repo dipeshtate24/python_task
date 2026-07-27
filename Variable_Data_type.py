@@ -1,5 +1,5 @@
 a = "3534"
-# a = "35fgrfg4"
+a = "35fgrfg4"
 a = int(a)
 print(type(a))
 print(a+5)
