@@ -36,8 +36,8 @@ class Employee():
 Suresh = Employee()
 Rajni = Employee()
 
-# Suresh.salary = 300
-# Rajni.salary = 400
+Suresh.salary = 300
+Rajni.salary = 400
 
 print(Suresh.company)
 print(Rajni.company)
