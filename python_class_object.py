@@ -15,7 +15,7 @@ a.occupation = "Accountant"
 
 b.name = "Nikita"
 b.occupation = "HR"
-# print(a.name, a.occupation)
+print(a.name, a.occupation)
 
 a.info()
 b.info()
