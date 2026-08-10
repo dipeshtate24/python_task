@@ -76,3 +76,4 @@ intercity.get_status()
 intercity.fare_info()
 intercity.bookTicket()
 intercity.get_status()
+
