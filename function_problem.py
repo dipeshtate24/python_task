@@ -95,3 +95,4 @@ def isGrater(a, b):
 
 CalculateGmean(9, 8)
 isGrater(9, 8)
+
