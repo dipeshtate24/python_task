@@ -59,3 +59,5 @@ lines = ['line 12', 'line 22', 'line 32']
 for line in lines:
     f.writelines(line +'\n')
 f.close() 
+
+
