@@ -30,3 +30,4 @@ def add_sum(x, y):
 # print(sum)
 sum = reduce(add_sum, number)
 print(sum)
+
