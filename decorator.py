@@ -32,6 +32,8 @@ def log_function_call(func):
         return result
     return decorated
 
+
+
 @log_function_call
 def my_function(a, b):
     return a+b
