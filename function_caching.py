@@ -2,12 +2,12 @@ import functools
 import time
 
 @functools.lru_cache(maxsize=None)
-# def fib(n):
-#     if n < 2:
-#         return n
-#     return fib(n-1)+fib(n-2)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1)+fib(n-2)
 
-# print(fib(20))
+print(fib(20))
 
 def fx(n):
     time.sleep(5)
