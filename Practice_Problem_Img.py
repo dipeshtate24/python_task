@@ -7,4 +7,5 @@ for file in folder_path:
         print(file)
         os.rename(f"Image_folder/{file}", f"Image_folder/{n}.png")
         n += 1
-        
+
+
