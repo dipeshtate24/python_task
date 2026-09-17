@@ -12,3 +12,4 @@ for files in os.listdir(folder_path):
             merger(pdf)
 
 merger.write("new_file.pdf")
+
