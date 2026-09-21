@@ -32,3 +32,4 @@ if __name__ == "__main__":
         results = executor.map(downloadFile, l1, l2)
         for r in results:
             print(r)
+
