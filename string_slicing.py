@@ -51,3 +51,4 @@ print(sentence.find("  "))
 ## replace 3 space problem with single space
 sentence = "Today i   create one painting."
 print(sentence.replace("   ", " "))
+
